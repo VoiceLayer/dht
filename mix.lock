@@ -1,0 +1,3 @@
+%{"dispatch": {:hex, :dispatch, "0.1.1", "a2852b582de7aa187d524926861efbcbc57e01c7a2a5260230e7ee9461977861", [:mix], [{:phoenix_pubsub, "~> 1.0.0", [hex: :phoenix_pubsub, optional: false]}]},
+  "hash_ring": {:git, "https://github.com/voicelayer/hash-ring.git", "3bc9f2fd14d0e161cc0b5b6e7fcd7d3f3ec5791a", []},
+  "phoenix_pubsub": {:hex, :phoenix_pubsub, "1.0.0", "c31af4be22afeeebfaf246592778c8c840e5a1ddc7ca87610c41ccfb160c2c57", [:mix], []}}
