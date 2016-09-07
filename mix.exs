@@ -17,8 +17,7 @@ defmodule Dht.Mixfile do
 
   defp deps do
     [
-       {:hash_ring, github: "voicelayer/hash-ring"},
-       {:dispatch, "~> 0.1.0"}
+       {:dispatch, github: "voicelayer/dispatch"}
     ]
   end
 end

@@ -24,22 +24,7 @@ iex(node1@127.0.0.1)1> Dht.Service.set(:foo, 1)
 true
 ```
 
-To get the values of 2 replicas for the key `:foo` call `get_values/1`.
-
-```elixir
-iex(node1@127.0.0.1)2> Dht.Service.get_values(:foo)
-[1, 1]
-```
-
-If the replicas diverged then the values will not match.
-For example if the replica server got restarted then its contents will get lost.
-
-```elixir
-iex(node1@127.0.0.1)3> Dht.Service.get_values(:foo)
-[1, nil]
-```
-
-Use `get/1` to get the values for the key and if the values do not match it will resolve the conflict and update the replicas.
+Use `get/1` to get the value for the key and if the values do not match it will resolve the conflict and update the replicas.
 
 ```elixir
 iex(node1@127.0.0.1)4> Dht.Service.get(:foo)
